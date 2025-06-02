@@ -2,10 +2,10 @@ package main
 
 import (
     "fmt"
-    "log"
+//    "log"
 
-    "/root/go/module03/01_task/citypkg"
-    "/root/go/module03/01_task/wordz"
+    "01_task/citypkg"
+//    "01_task/wordz"
     "github.com/huandu/xstrings" // замените на актуальный пакет
 )
 

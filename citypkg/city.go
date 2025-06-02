@@ -1,18 +1,37 @@
 package citypkg
 
 import (
-    "fmt"
-    "/root/go/module03/01_task/wordz" // замените на ваш путь
+    "01_task/wordz"
+    "strings"
 )
 
+var cities = []string{
+    "Moscow",
+    "London",
+    "Paris",
+    "Tokyo",
+    "Berlin",
+}
+
 func City() string {
-    return wordz.Random()
+    randomStr := wordz.Random()
+    word := strings.TrimPrefix(randomStr, wordz.Prefix)
+    
+    // Находим индекс слова в wordz.Words
+    var index int
+    for i, w := range wordz.Words {
+        if w == word {
+            index = i
+            break
+        }
+    }
+    
+    // Возвращаем город по тому же индексу
+    return cities[index]
 }
 
 func Digit() string {
-    // Возвращает случайное число в виде строки: one, two, three...
-    digits := []string{"one", "two", "three", "four", "five"}
-    max := int64(len(digits))
-    r, _ := rand.Int(rand.Reader, big.NewInt(max))
-    return digits[r.Int64()]
+    randomStr := wordz.Random()
+    word := strings.TrimPrefix(randomStr, wordz.Prefix)
+    return strings.ToLower(word)
 }
