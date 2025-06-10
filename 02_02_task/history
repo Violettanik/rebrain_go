@@ -1,0 +1,1 @@
+docker run -v `pwd`/main.go:/go/main.go golang:1.12 go run /go/main.go

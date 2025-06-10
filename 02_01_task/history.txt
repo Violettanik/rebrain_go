@@ -1,0 +1,5 @@
+docker run -d -v `pwd`/main.go:/go/main.go dhnikolas/golang-htop
+docker exec -it 075e93fd1be15d1aac02be8f147bd6c07a789f0b992aadcd2be244a5d5f336cc bash
+go build main.go
+./main
+docker exec -it 075e93fd1be15d1aac02be8f147bd6c07a789f0b992aadcd2be244a5d5f336cc htop
