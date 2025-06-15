@@ -1,0 +1,21 @@
+mode: atomic
+04_task/unit.go:3.36,5.26 2 10
+04_task/unit.go:6.14,7.16 1 7
+04_task/unit.go:8.13,9.34 1 3
+04_task/unit.go:12.5,13.16 2 7
+04_task/unit.go:13.16,16.6 2 2
+04_task/unit.go:18.5,19.17 2 7
+04_task/unit.go:19.17,22.6 2 30
+04_task/unit.go:24.5,24.17 1 7
+04_task/unit.go:24.17,26.6 1 2
+04_task/unit.go:27.5,27.15 1 5
+04_task/unit.go:31.41,33.30 2 5
+04_task/unit.go:33.30,34.22 1 11
+04_task/unit.go:34.22,36.10 1 2
+04_task/unit.go:37.9,37.25 1 9
+04_task/unit.go:39.5,39.17 1 3
+04_task/unit.go:43.31,44.14 1 6
+04_task/unit.go:44.14,46.6 1 1
+04_task/unit.go:47.5,49.15 3 5
+04_task/unit.go:49.15,52.6 2 16
+04_task/unit.go:53.5,53.32 1 5
