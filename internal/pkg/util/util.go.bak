@@ -1,0 +1,8 @@
+package util
+
+func Pad(s string, length int) string {
+    for len(s) < length {
+        s += " Hello, world"
+    }
+    return s
+}

@@ -1,0 +1,4 @@
+go run cmd/app/main.go
+wrk -t4 -c100 -d30s http://localhost:6060/hello\?length\=1000
+go tool pprof -http=:9090 http://localhost:6060/debug/pprof/profile\?seconds\=30
+go tool pprof -http=:9090 http://localhost:6060/debug/pprof/heap
