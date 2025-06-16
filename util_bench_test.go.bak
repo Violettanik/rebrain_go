@@ -1,0 +1,32 @@
+package util
+
+import "testing"
+
+// Оригинальные реализации
+func FibRecursive(n int) int {
+    if n < 2 {
+        return n
+    }
+    return FibRecursive(n-1) + FibRecursive(n-2)
+}
+
+func MakeSliceBasic(l int) []int {
+    s := []int{}
+    for i := 0; i < l; i++ {
+        s = append(s, i)
+    }
+    return s
+}
+
+// Бенчмарки
+func BenchmarkFibRecursive(b *testing.B) {
+    for i := 0; i < b.N; i++ {
+        FibRecursive(35)
+    }
+}
+
+func BenchmarkMakeSliceBasic(b *testing.B) {
+    for i := 0; i < b.N; i++ {
+        MakeSliceBasic(3000000)
+    }
+}

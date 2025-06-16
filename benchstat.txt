@@ -1,0 +1,38 @@
+goos: linux
+goarch: amd64
+pkg: 05_task
+cpu: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+                     │   old.txt    │       new.txt       │
+                     │    sec/op    │    sec/op     vs base   │
+FibRecursive-8         42.92m ± ∞ ¹
+MakeSliceBasic-8       32.04m ± ∞ ¹
+FibIterative-8                        9.232n ± ∞ ¹
+MakeSliceOptimized-8                  4.024m ± ∞ ¹
+geomean                37.08m         6.095µ        ? ² ³
+¹ need >= 6 samples for confidence interval at level 0.95
+² benchmark set differs from baseline; geomeans may not be comparable
+³ ratios must be >0 to compute geomean
+
+                     │    old.txt    │        new.txt         │
+                     │     B/op      │     B/op       vs base │
+FibRecursive-8           0.000 ± ∞ ¹
+MakeSliceBasic-8       122.5Mi ± ∞ ¹
+FibIterative-8                           0.000 ± ∞ ¹
+MakeSliceOptimized-8                   22.89Mi ± ∞ ¹
+geomean                            ²                  ? ³ ² ⁴
+¹ need >= 6 samples for confidence interval at level 0.95
+² summaries must be >0 to compute geomean
+³ benchmark set differs from baseline; geomeans may not be comparable
+⁴ ratios must be >0 to compute geomean
+
+                     │   old.txt   │       new.txt        │
+                     │  allocs/op  │  allocs/op   vs base │
+FibRecursive-8         0.000 ± ∞ ¹
+MakeSliceBasic-8       44.00 ± ∞ ¹
+FibIterative-8                       0.000 ± ∞ ¹
+MakeSliceOptimized-8                 1.000 ± ∞ ¹
+geomean                          ²                ? ³ ² ⁴
+¹ need >= 6 samples for confidence interval at level 0.95
+² summaries must be >0 to compute geomean
+³ benchmark set differs from baseline; geomeans may not be comparable
+⁴ ratios must be >0 to compute geomean
