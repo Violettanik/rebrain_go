@@ -1,0 +1,13 @@
+app:
+  name: {{.AppName}}
+  version: {{.Version}}
+
+database:
+  host: {{.Database.Host}}
+  port: {{.Database.Port}}
+  username: {{.Database.Username}}
+  password: {{.Database.Password}}
+
+monitoring:
+  enabled: {{.Monitoring.Enabled}}
+  port: {{.Monitoring.Port}}

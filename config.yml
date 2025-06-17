@@ -1,0 +1,13 @@
+app:
+  name: MyApp
+  version: 1.0.0
+
+database:
+  host: localhost
+  port: 5432
+  username: admin
+  password: secret
+
+monitoring:
+  enabled: true
+  port: 9090
