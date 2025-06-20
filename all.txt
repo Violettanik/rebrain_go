@@ -1,0 +1,16 @@
+goos: linux
+goarch: amd64
+pkg: 04_task/internal/config
+cpu: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+BenchmarkReflectionStructToMap-8   	  280557	      8880 ns/op
+BenchmarkReflectionStructToMap-8   	  138613	      9747 ns/op
+BenchmarkReflectionStructToMap-8   	  143143	      7306 ns/op
+BenchmarkReflectionStructToMap-8   	  166435	      6974 ns/op
+BenchmarkReflectionStructToMap-8   	  172540	      6581 ns/op
+BenchmarkGeneratedStructToMap-8    	 1637196	       669.9 ns/op
+BenchmarkGeneratedStructToMap-8    	 1905828	       604.7 ns/op
+BenchmarkGeneratedStructToMap-8    	 1986166	       788.0 ns/op
+BenchmarkGeneratedStructToMap-8    	 1711382	       674.7 ns/op
+BenchmarkGeneratedStructToMap-8    	 1701832	       634.6 ns/op
+PASS
+ok  	04_task/internal/config	17.990s

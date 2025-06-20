@@ -1,0 +1,10 @@
+goos: linux
+goarch: amd64
+pkg: 04_task/internal/config
+cpu: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+                        │   all.txt    │
+                        │    sec/op    │
+ReflectionStructToMap-8   7.306µ ± ∞ ¹
+GeneratedStructToMap-8    669.9n ± ∞ ¹
+geomean                   2.212µ
+¹ need >= 6 samples for confidence interval at level 0.95
